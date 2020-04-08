@@ -1,0 +1,239 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>materialize CSS</title>
+    <style>
+        header {
+            background: url('images/man.jpg');
+            background-position: center;
+            background-size: cover;
+            min-height: 1000px;
+        }
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        .tabs .indicator{
+            background-color: #1a237e;
+        }
+        .tabs .tab a:focus,.tabs .tab a:focus.active{
+            background-color: transparent;
+        }
+
+        @media screen and (max-width: 670px) {
+            header {
+                min-height: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--navabr-->
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="#" class="brand-logo left" style="padding-left: 100px;"><span style="color: red;">K</span><span
+                        style="color:teal;">A</span></a>
+                <a href="#" class="sidenav-trigger" data-target="mobile">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="" class=" tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a></li>
+                    <li><a href="" class=" tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Instagram">
+                        <i class="fa fa-instagram"></i>
+                    </a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id='mobile'>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <!--grids-->
+    <section class="section container scrollspy" id='about' >
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="/images/portrait.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">Portaits</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minus?
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1 ">
+                <img src="/images/city.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align ">
+                <h2 class="indigo-text text-darken-4">CityScape</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minus?
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 ">
+                <img src="/images/nature.jpg" alt="" class="responsive-img materialboxed
+                ">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">Nature</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minus?
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--paralax-->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="/images/street.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+    <!--services-->
+    <section class="container section scrollspy" id="services" >
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="indigo-text text-darken-4">What I do</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, cum!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, cum!</p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#reactjs" class="indigo-text text-darken-4">ReactJS</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#reactnative" class="indigo-text text-darken-4">ReactNative</a>
+                    </li>
+                </ul>
+                <div class="col s12" id="reactjs">
+                    <h2 class="flow-text indigo-text text-darken-4">ReactJs</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, cum!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, cum!</p>
+                </div>
+                <div class="col s12" id="reactnative">
+                    <h2 class="flow-text indigo-text text-darken-4">ReactNative</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, cum!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, cum!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--paralax-->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="/images/stars.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+    <!--contact-->
+    <section class="container section scrollspy" id="contact" >
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, minus!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, minus!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, minus!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, minus!</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">time</i>
+                        <input type="text" id="date" class="datepicker">
+                        <label for="date">Choose a date to meet me...</label>
+                    </div>
+                    <div class="input-field">
+                        <p>Services Required...</p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>ReactJS</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>ReactNative</span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h2>About Me</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, vitae?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, vitae?</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h2>Connect</h2>
+                    <ul>
+                        <li><a href="" class="grey-text text-lighten-3">Facebook</a></li>
+                        <li><a href="" class="grey-text text-lighten-3">Twitter</a></li>
+                        <li><a href="" class="grey-text text-lighten-3">Linked In</a></li>
+                        <li><a href="" class="grey-text text-lighten-3">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy;2020 | A Kawsar Ahmed's Approach</div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends:true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        })
+    </script>
+</body>
+
+</html>
